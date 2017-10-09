@@ -1,0 +1,10 @@
+<h1>Play the Game, Find a Word!</h1>
+
+<p><%= @generate.join(" ") %></p>
+<form action="/score" method="get">
+  <input type="text" name="query" placeholder="What's Your Guess?">
+  <input type="hidden" name="grid" value="<%= @generate.join('') %>">
+  <input type="hidden" name="start_time" value="<%= @start_time %>">
+  <input type="submit">
+</form>
+

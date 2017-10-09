@@ -1,0 +1,15 @@
+
+<h1>Here is your score</h1>
+<p>What You Guessed</p>
+  <ul><%=@result[:attempt] %></ul>
+  <p>Your Score</p>
+  <ul><%=  @result[:score].round(2) %></ul>
+  <p>Time Taken</p>
+  <ul><%= @result[:time].round(2) %> seconds</ul>
+</ul>
+
+<h2><%= @result[:message] %></h2>
+<!-- <li><%= @result[:score] %></li>
+ -->
+
+
